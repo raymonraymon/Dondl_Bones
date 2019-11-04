@@ -1,0 +1,25 @@
+=======================================
+Installation:
+=======================================
+
+Before compling the source code the following external libraries are required:
+- blas (http://www.netlib.org/blas/)
+- lapack (http://www.netlib.org/lapack/)
+- suitesparse (http://faculty.cse.tamu.edu/davis/suitesparse.html)
+- eigen (http://eigen.tuxfamily.org)
+- boost (https://www.boost.org)
+- vtk (https://www.vtk.org/)
+- ipopt (https://projects.coin-or.org/Ipopt)
+- xvfb (https://www.x.org/archive/X11R7.6/doc/man/man1/Xvfb.1.xhtml)
+
+
+The executables for the shape optimization problems are
+source/projects/elasticBodies/PeriodicHomogenizationBones/BonesMatOpt2D.cpp
+source/projects/elasticBodies/PeriodicHomogenizationBones/BonesMatOpt3D.cpp
+
+The corresponding parameters are read from the files
+ParameterParser/shapeDesignBones/BonesAffinePeriodic2D.ini
+ParameterParser/shapeDesignBones/BonesAffinePeriodic3D.ini
+
+Results are written into "saveDirectory" in the parameter files.  
+
